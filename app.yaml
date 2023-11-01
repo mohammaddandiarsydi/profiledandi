@@ -1,8 +1,11 @@
-runtime: php73 # You can specify the PHP runtime version you want to use
+runtime: php73
+
+env_variables:
+  # You can define environment variables if needed
 
 handlers:
   - url: /assets
     static_dir: assets
 
-- url: /.*
-  script: index.php
+  - url: .*
+    script: index.php
