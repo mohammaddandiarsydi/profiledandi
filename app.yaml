@@ -1,11 +1,11 @@
-runtime: php73
-
-env_variables:
-  # You can define environment variables if needed
+runtime: php74 # Versi PHP yang digunakan
 
 handlers:
   - url: /assets
-    static_dir: assets
+    static_dir: assets # Mengatur direktori aset statis seperti gambar, CSS, dan JavaScript
 
-  - url: .*
-    script: index.php
+  - url: /.*
+    script: auto # Mengarahkan semua permintaan lain ke PHP untuk ditangani
+
+env_variables:
+  # Definisikan variabel lingkungan jika diperlukan
