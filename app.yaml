@@ -2,7 +2,7 @@ runtime: php74 # Versi PHP yang digunakan
 
 handlers:
   - url: /assets
-    static_dir: gs://utility-node-403807/assets # Mengatur direktori aset statis seperti gambar, CSS, dan JavaScript
+    static_dir: gs://enhanced-voyage-403808.appspot.com/assets # Mengatur direktori aset statis seperti gambar, CSS, dan JavaScript
 
   - url: /.*
     script: auto # Mengarahkan semua permintaan lain ke PHP untuk ditangani
